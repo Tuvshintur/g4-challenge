@@ -65,4 +65,11 @@ router.post("/search", async (req, res) => {
     res.send(result);
 });
 
+router.post("/searchWithType", async (req, res) => {
+    const body = req.body;
+    const result = await knex.searchCustomerBySearchType(body);
+
+    res.send(result);
+});
+
 module.exports = router;

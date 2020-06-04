@@ -134,7 +134,7 @@ class Customers extends Component {
         }
 
         axios
-            .post("/customers/search", formData)
+            .post("/customers/searchWithType", formData)
             .then((response) => {
                 const customers = response.data;
                 this.setState({ customers: customers, error: false });

@@ -1,5 +1,6 @@
 const knex = require("knex")(require("./knex.config.js"));
 const tableName = process.env.DB_TABLE;
+const searchTypes = require("./constants");
 module.exports = {
     getCustomers() {
         return knex(tableName).select();
@@ -71,5 +72,25 @@ module.exports = {
         }
 
         return knex(tableName).where(formatted).select();
+    },
+
+    searchCustomerBySearchType({ search_type, email, first_name, last_name }) {
+        if (search_type) {
+            let query = "";
+            if (search_type === searchTypes.email) {
+                query = email;
+            }
+
+            if (search_type === searchTypes.firstName) {
+                query = first_name;
+            }
+
+            if (search_type === searchTypes.lastName) {
+                query = last_name;
+            }
+
+            return knex(tableName).where(search_type, searchTypes.like, `%${query}%`).select();
+        }
+        return null;
     },
 };

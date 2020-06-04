@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Saira Extra Condensed", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+}
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+.bg-image {
+    background-color: #bd5d38 !important;
+}
+
+.bg-details {
+    background-color: #ffd;
+}
+
+.text-primary {
+    color: #bd5d38 !important;
+}
+
+a {
+    color: #bd5d38;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #824027;
+}
+
+.img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+}

@@ -39,3 +39,11 @@ Content-Type: application/json
     "ip": "255.255.255.255",
     "email": "newUser3@gmail.com"
 }
+
+POST http://localhost:4000/customers/searchWithType
+Content-Type: application/json
+
+{
+    "search_type": "first_name",
+    "first_name": "Sa"
+}

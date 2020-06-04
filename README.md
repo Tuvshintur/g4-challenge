@@ -31,7 +31,8 @@ To send request open customer.http file and you will find what kind of data shou
 I used VSCODE with extension, you can find extension following link
 https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 
-For start nodemon, if you have not node index.js
+For start nodemon, if you have not,use node index.js
+In the mysql: configure as described in .env file /in real world, we must not upload .env file to public. I uploaded env because its easy to share/ and import customers.sql
 
 ### js-engineering-challenge
 
@@ -41,7 +42,13 @@ For this section, I used reactJS, simple CSS.
 2. Used axios to connect API that I created on Web-Service-Engineering-Challenge.
 3. All state related things covered in container folder
 4. All functional components stored in component folder
+5. This project requires only four components/Table, Input, Button, Spinner/. Do not need add google material or bootstrap or other component libraries which makes it bigger and bigger.
 
 To use please start Web-Service-Engineering-Challenge
 
-For start this projec, use npm start
+For start this project, use npm start
+
+### UX-Design-Challenge
+
+Used bootstrap on profile.html
+Used UIKit on dashboard.html
