@@ -8,7 +8,7 @@ import axios from "../../axios-custom";
 import { checkValidity, updateObject } from "../../utility";
 import classes from "./Customers.module.css";
 
-class Customers extends Component {
+export class Customers extends Component {
     state = {
         customers: [],
         page: 1,
