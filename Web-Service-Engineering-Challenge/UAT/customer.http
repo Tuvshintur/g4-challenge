@@ -1,11 +1,11 @@
 
-GET http://localhost:3000/customers
+GET http://localhost:4000/customers
 
-GET http://localhost:3000/customers/2023
+GET http://localhost:4000/customers/2023
 
-GET http://localhost:3000/customers/page/2
+GET http://localhost:4000/customers/page/2
 
-POST http://localhost:3000/customers
+POST http://localhost:4000/customers
 Content-Type: application/json
 
 {
@@ -17,7 +17,7 @@ Content-Type: application/json
     "longitude": 52.273891
 }
 
-PUT http://localhost:3000/customers
+PUT http://localhost:4000/customers
 Content-Type: application/json
 
 {
@@ -30,9 +30,9 @@ Content-Type: application/json
     "longitude": 52.273891
 }
 
-DELETE http://localhost:3000/customers/1
+DELETE http://localhost:4000/customers/1
 
-POST http://localhost:3000/customers/search
+POST http://localhost:4000/customers/search
 Content-Type: application/json
 
 {

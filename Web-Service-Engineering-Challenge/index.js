@@ -6,7 +6,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const mysql = require("mysql");
 dotenv.config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 const indexRoute = require("./routes/indexRoute");

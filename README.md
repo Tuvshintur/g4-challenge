@@ -31,9 +31,17 @@ To send request open customer.http file and you will find what kind of data shou
 I used VSCODE with extension, you can find extension following link
 https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 
+For start nodemon, if you have not node index.js
+
 ### js-engineering-challenge
 
 For this section, I used reactJS, simple CSS.
 
 1. Do not need to implement Redux because this application has simple states.
-2. Used axios to connect API that I created on Web-Service-Engineering-Challenge
+2. Used axios to connect API that I created on Web-Service-Engineering-Challenge.
+3. All state related things covered in container folder
+4. All functional components stored in component folder
+
+To use please start Web-Service-Engineering-Challenge
+
+For start this projec, use npm start

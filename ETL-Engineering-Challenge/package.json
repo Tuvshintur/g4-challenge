@@ -1,16 +1,16 @@
 {
-  "name": "etl-engineering-challenge",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "fast-csv": "^4.3.0",
-    "mysql": "^2.18.1"
-  }
+    "name": "etl-engineering-challenge",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "fast-csv": "^4.3.0",
+        "mysql": "^2.18.1"
+    }
 }

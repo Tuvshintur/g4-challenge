@@ -1,0 +1,31 @@
+.Customers {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.Customers input {
+    display: block;
+}
+
+.Customers table {
+    border: 1px solid #dee2e6;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.Customers table thead tr {
+    background-color: #ccc;
+}
+
+.Customers table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (min-width: 600px) {
+    .Customers {
+        width: 80%;
+    }
+}
