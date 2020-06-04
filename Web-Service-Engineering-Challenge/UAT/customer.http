@@ -1,0 +1,39 @@
+
+GET http://localhost:3000/customers
+
+GET http://localhost:3000/customers/1
+
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "email": "newUser4@gmail.com",
+    "first_name": "new",
+    "last_name": "user",
+    "ip": "255.255.255.255",
+    "latitude": 27.634171,
+    "longitude": 52.273891
+}
+
+PUT http://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "id": 1,
+    "email": "newUser3@gmail.com",
+    "first_name": "new",
+    "last_name": "user",
+    "ip": "255.255.255.255",
+    "latitude": 27.634171,
+    "longitude": 52.273891
+}
+
+DELETE http://localhost:3000/customers/2023
+
+POST http://localhost:3000/customers/search
+Content-Type: application/json
+
+{
+    "id": 1,
+    "email": "newUser3@gmail.com"
+}
