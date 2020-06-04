@@ -36,3 +36,4 @@ https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 For this section, I used reactJS, simple CSS.
 
 1. Do not need to implement Redux because this application has simple states.
+2. Used axios to connect API that I created on Web-Service-Engineering-Challenge
