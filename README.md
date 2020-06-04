@@ -6,13 +6,14 @@ Run npm install to run project
 In the mysql: configure as described in .env file /in real world, we must not upload .env file to public. I uploaded env because its easy to share/
 
 Then open command line or terminal and execute following commands to insert data to sql
-node index.js etl/data1.csv etl/map1.csv
-node index.js etl/data2.csv etl/map2.csv
+
+1. node index.js etl/data1.csv etl/map1.csv
+2. node index.js etl/data2.csv etl/map2.csv
 
 In linux, if you have extra big data you can also execute followings to execute as background process
 
-node index.js etl/data1.csv etl/map1.csv >execution.log 2&>1
-node index.js etl/data2.csv etl/map2.csv >execution.log 2&>1
+1. node index.js etl/data1.csv etl/map1.csv >execution.log 2&>1
+2. node index.js etl/data2.csv etl/map2.csv >execution.log 2&>1
 
 ### Web-Service-Engineering-Challenge
 
@@ -50,5 +51,5 @@ For start this project, use npm start
 
 ### UX-Design-Challenge
 
-Used bootstrap on profile.html
-Used UIKit on dashboard.html
+1. Used bootstrap on profile.html
+2. Used UIKit on dashboard.html
