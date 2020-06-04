@@ -7,6 +7,13 @@ module.exports = {
     getCustomerById({ id }) {
         return knex(tableName).where("id", id).select();
     },
+    getCustomerByPage({ pageId }) {
+        const limit = 10;
+        return knex(tableName)
+            .limit(limit)
+            .offset(pageId * limit)
+            .select();
+    },
     addCustomer({ customer }) {
         let formatted = {
             email: customer.email,
@@ -63,6 +70,6 @@ module.exports = {
             formatted.longitude = parseFloat(customer.longitude);
         }
 
-        return knex("customers").where(formatted).select();
+        return knex(tableName).where(formatted).select();
     },
 };

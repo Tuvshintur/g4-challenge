@@ -8,6 +8,13 @@ router.get("/", async (req, res) => {
     res.send(customers);
 });
 
+router.get("/page/:id(\\d+)", async (req, res) => {
+    const pageId = Number(req.params.id);
+    const customerList = await knex.getCustomerByPage({ pageId: pageId });
+
+    res.json(customerList);
+});
+
 router.get("/:id(\\d+)", async (req, res) => {
     const customerId = Number(req.params.id);
     const customer = await knex.getCustomerById({ id: customerId });
