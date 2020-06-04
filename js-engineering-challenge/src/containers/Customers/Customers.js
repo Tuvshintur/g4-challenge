@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Input from "../../component/Input/Input";
 import Button from "../../component/Button/Button";
+import Spinner from "../../component/Spinner/Spinner";
 
 import axios from "../../axios-custom";
 import { checkValidity, updateObject } from "../../utility";
@@ -175,8 +176,8 @@ class Customers extends Component {
             </form>
         );
 
-        let customers = <p style={{ textAlign: "center" }}> Something went wrong</p>;
-        if (!this.state.error) {
+        let customers = this.state.error ? <p style={{ textAlign: "center" }}> Something went wrong</p> : <Spinner />;
+        if (this.state.customers) {
             customers = this.state.customers.map((customer, idx) => {
                 return (
                     <tr key={idx}>
